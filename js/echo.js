@@ -1,6 +1,9 @@
 function echo()
 {
-  // ...
+    (Array.prototype.slice.call(arguments)).forEach(function(value){
+        document.write(value);
+        document.write("<br>");
+    });
 }
 
 echo();

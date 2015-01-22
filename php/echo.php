@@ -1,10 +1,15 @@
 <?php
 
-function echo()
+function echoout()
 {
-  // ...
+    $inputs = func_get_args();
+    foreach($inputs as $output)
+    {
+        echo $output;
+        echo '<br>';
+    }
 }
 
-echo();
-echo('bla');
-echo('foo', 'bar', 'baz');
+echoout();
+echoout('bla');
+echoout('foo', 'bar', 'baz');
